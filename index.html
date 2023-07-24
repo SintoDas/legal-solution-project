@@ -4,6 +4,170 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solution</title>
+    <!-- DiasyUI and tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/e7617b7805.js"
+      crossorigin="anonymous"
+    ></script>
+    <i class="fa-solid fa-arrow-right"></i>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:wght@400;500;600;700;800&family=Fira+Sans&family=Handlee&family=Lato:wght@300;400;700;900&family=Open+Sans:wght@400;700;800&family=Roboto:wght@500;700;900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .em-garamond-font {
+        font-family: "EB Garamond", serif;
+      }
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+    <!-- custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-bg": "url('./images/banner.png')",
+            },
+            colors: {
+              clifford: "#da373d",
+              "nav-color": "#707070",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body class="bg-white">
+    <header class="max-width-screen-xl max-auto py-2 md:px-16 lg:px-24 font">
+      <!-- navbar -->
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a class="text-[nav-color] poppins-font">Home</a></li>
+              <li>
+                <a class="text-[nav-color] poppins-font"
+                  >Services<i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-[nav-color] poppins-font"
+                  >Cases<i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-[nav-color] poppins-font"
+                  >Blog<i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-[nav-color] poppins-font"
+                  >Contact Us<i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a class="btn btn-ghost normal-case text-xl">
+              <img src="./images/logo2.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[nav-color]">
+            <li>
+              <a class="text-[nav-color] poppins-font">Home</a>
+            </li>
+            <li>
+              <a class="text-[nav-color] poppins-font"
+                >Services<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-[nav-color] poppins-font"
+                >Cases<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-[nav-color] poppins-font"
+                >Blog<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-[nav-color] poppins-font"
+                >Contact Us<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[#B68C5A] py-5 px-8 rounded-lg">Free Consultation</a>
+        </div>
+      </div>
+
+      <!-- banner -->
+      <div class="hero min-h-[calc(100vh-69px)] bg-hero-bg mt-16">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-full space-y-6 text-center">
+            <h1 class="mb-5 text-7xl em-garamond-font font-extrabold">
+              We Provide Effective <br />Legal Solutions
+            </h1>
+            <p class="mb-5 poppins-font">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority <br />
+              have suffered alteration in some form, by injected humour.
+            </p>
+            <div>
+              <input
+                class="rounded-lg w-96 p-4 h-16 space-y-2"
+                type="text"
+                placeholder="Search your services"
+              />
+              <button
+                class="btn bg-[#B68C5A] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
